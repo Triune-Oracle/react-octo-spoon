@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: triumvirate-backend
+    env: node
+    region: oregon
+    plan: starter
+    repo: https://github.com/Triune-Oracle/TriumvirateMonitor
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve
